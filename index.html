@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="bg-secondary">
+
+  <div class="container bg-light p-5 my-5 rounded">
+
+    <h1>BMI Calculator</h1>
+
+    <form>
+
+      <div class="form-group">
+        <label for="height">Height (inches)</label>
+        <input type="number" class="form-control" name="height" id="height" placeholder="Enter your height" min="59" max="79" required>
+      </div>
+
+      <div class="form-group">
+        <label for="weight">Weight (pounds)</label>
+        <input type="number" class="form-control" name="weight" id="weight" placeholder="Enter your weight" min="88" max="353" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary px-4" name="submit">Check BMI</button>
+
+    </form>
+
+
+    <div class="row mt-4">
+
+      <div class="col-md-4">
+        <div id="bmiCard" class="card text-center">
+          <div class="card-body">
+            <h5>Your BMI:</h5>
+            <h1 id="bmiResult">?</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5>Categorized as...</h5>
+            <h1 id="category">?</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+
+</html>
